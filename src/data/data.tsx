@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Perrin\'s Portfolio',
+  description: "Life story and resume of Perrin Myerson",
 };
 
 /**
@@ -69,18 +69,17 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Perrin Myerson`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Seattle based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
+        at <strong className="text-stone-100">Amazon</strong> helping find innovative and impactful solutions to complex problems
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can catch me volunteering for the<strong className="text-stone-100"> Crisis Line</strong>,
+        running rampant in <strong className="text-stone-100">Poker</strong>, or fostering{' '}
+        <strong className="text-stone-100">dogs</strong>.
       </p>
     </>
   ),
@@ -108,37 +107,59 @@ export const aboutData: About = {
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
+    {label: 'Location', text: 'Seattle, WA', Icon: MapIcon},
+    {label: 'Age', text: '19', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'American', Icon: FlagIcon},
+    {label: 'Interests', text: 'Cooking, Mental Health, Eating, Dinosaurs', Icon: SparklesIcon},
+    {label: 'Study', text: 'Duke University', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Amazon', Icon: OfficeBuildingIcon},
   ],
 };
+/**
+ * Resume section -- TODO: Standardize resume contact format or offer MDX
+ */
+export const education: TimelineItem[] = [
+  {
+    date: 'April 2007',
+    location: 'Duke University',
+    title: 'Bachelors in Computer Science and Electrical and Computer Engineering, Minor in Mathematics',
+    content: <p>Part of the Duke Applied Machine learning group, Duke Student Founders, Duke Innovation Studio and of course, Dukeline</p>,
+  },
+  
+];
+
+export const experience: TimelineItem[] = [
+  {
+    date: 'Late Summer 2023',
+    location: 'Amazon',
+    title: 'Software Engineering Intern',
+    content: (
+      <p>
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
+      </p>
+    ),
+  },
+  {
+    date: 'Early Summer 2023',
+    location: 'Truveta',
+    title: 'Software Engineering Intern',
+    content: (
+      <p>
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
+      </p>
+    ),
+  },
+];
 
 /**
  * Skills section
  */
 export const skills: SkillGroup[] = [
+  
   {
-    name: 'Spoken languages',
-    skills: [
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
-  {
+
     name: 'Frontend development',
     skills: [
       {
@@ -189,6 +210,23 @@ export const skills: SkillGroup[] = [
       },
     ],
   },
+  {
+    name: 'Spoken languages',
+    skills: [
+      {
+        name: 'English',
+        level: 10,
+      },
+      {
+        name: 'Spanish',
+        level: 8,
+      },
+      {
+        name: 'Hebrew',
+        level: 3,
+      },
+    ],
+  }
 ];
 
 /**
@@ -263,48 +301,6 @@ export const portfolioItems: PortfolioItem[] = [
   },
 ];
 
-/**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
- */
-export const education: TimelineItem[] = [
-  {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-];
-
-export const experience: TimelineItem[] = [
-  {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
-  {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
-];
 
 /**
  * Testimonial section
