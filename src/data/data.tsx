@@ -103,9 +103,8 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I'm always looking to meet new faces and discuss opportunities in the tech world. My work and research has focused on machine learning and quantitative modeling but I am always looking 
+  to learn and embrace challenge.`,
   aboutItems: [
     {label: 'Location', text: 'Seattle, WA', Icon: MapIcon},
     {label: 'Age', text: '19', Icon: CalendarIcon},
@@ -120,10 +119,10 @@ export const aboutData: About = {
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
+    date: 'August 2021 - May 2024',
     location: 'Duke University',
     title: 'Bachelors in Computer Science and Electrical and Computer Engineering, Minor in Mathematics',
-    content: <p>Part of the Duke Applied Machine learning group, Duke Student Founders, Duke Innovation Studio and of course, Dukeline</p>,
+    content: <p>Part of the Applied Machine learning group, Student Founders Program, Innovation Studio, Dukeline and Theta Tau</p>,
   },
   
 ];
@@ -134,10 +133,11 @@ export const experience: TimelineItem[] = [
     location: 'Amazon',
     title: 'Software Engineering Intern',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul>
+        <li>Developed lambda to read active pipeline deployment metadata and approve steps automatically as appropriate</li> 
+        <li>Added wave deployments and bake times to pipelines to allow quick rollbacks for emergent bug fixes</li>    
+        <li>Created scaling failure detection and alert mechanism for all AWS codePipelines </li>
+      </ul>
     ),
   },
   {
@@ -146,8 +146,7 @@ export const experience: TimelineItem[] = [
     title: 'Software Engineering Intern',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        I did things
       </p>
     ),
   },
@@ -157,22 +156,38 @@ export const experience: TimelineItem[] = [
  * Skills section
  */
 export const skills: SkillGroup[] = [
-  
   {
-
-    name: 'Frontend development',
+    name: 'Languages',
     skills: [
       {
-        name: 'React',
+        name: 'Python',
         level: 9,
       },
       {
-        name: 'Typescript',
-        level: 7,
+        name: 'Java',
+        level: 8,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'C++',
+        level: 5,
+      },
+    ],
+  },
+  {
+    
+    name: 'Machine Learning',
+    skills: [
+      {
+        name: 'PyTorch',
+        level: 8,
+      },
+      {
+        name: 'Tensorflow',
+        level: 5,
+      },
+      {
+        name: 'Keras',
+        level: 5,
       },
     ],
   },
@@ -185,31 +200,15 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Rust',
-        level: 5,
+        level: 3,
       },
       {
-        name: 'Golang',
-        level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
+        name: 'Ruby',
         level: 3,
       },
     ],
   },
+  
   {
     name: 'Spoken languages',
     skills: [
@@ -234,69 +233,69 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
+    title: 'Crisis Line Webscraper',
     description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    url: 'https://perrin-myerson.com',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
+    title: 'Duke Resource Aggregator',
     description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    url: 'https://perrin-myerson.com',
     image: porfolioImage2,
   },
   {
     title: 'Project title 3',
     description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    url: 'https://perrin-myerson.com',
     image: porfolioImage3,
   },
   {
     title: 'Project title 4',
     description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    url: 'https://perrin-myerson.com',
     image: porfolioImage4,
   },
   {
     title: 'Project title 5',
     description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    url: 'https://perrin-myerson.com',
     image: porfolioImage5,
   },
   {
     title: 'Project title 6',
     description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    url: 'https://perrin-myerson.com',
     image: porfolioImage6,
   },
   {
     title: 'Project title 7',
     description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    url: 'https://perrin-myerson.com',
     image: porfolioImage7,
   },
   {
     title: 'Project title 8',
     description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    url: 'https://perrin-myerson.com',
     image: porfolioImage8,
   },
   {
     title: 'Project title 9',
     description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    url: 'https://perrin-myerson.com',
     image: porfolioImage9,
   },
   {
     title: 'Project title 10',
     description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    url: 'https://perrin-myerson.com',
     image: porfolioImage10,
   },
   {
     title: 'Project title 11',
     description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    url: 'https://perrin-myerson.com',
     image: porfolioImage11,
   },
 ];
@@ -309,18 +308,18 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Marcus Ortiz',
+      text: 'Innovative, hard working and empathetic, Perrin brings strong assertive yet respectful opinions to meetings ',
+      image: 'https://clarkscholars.duke.edu/sites/clarkscholars.duke.edu/files/u67/Marcus%20Ortiz.png',   
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
+      name: 'Javier Martinez ',
+      text: 'I had the pleasure of working under Perrin for 3 years, and loved how he was able to find different ways to being value no matter where he applied himself.',
+      image: 'https://media-exp1.licdn.com/dms/image/C4E03AQHbyx5BVWDwCQ/profile-displayphoto-shrink_400_400/0/1633577555494?e=1672272000&v=beta&t=TtQjnC_6s1cwiV3SJrutco9ctop-czANqOpcxQ4CCu0',
+     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
+      name: 'Abenezer Gelaw',
+      text: 'A unique and inspiring leader. Goes the extra mile in showing passion when it comes to his work and team.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
   ],
@@ -336,23 +335,23 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'perrin.myerson@duke.edu',
+      href: 'mailto:perrin.myerson@tduke.edu',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
+      text: 'Seattle, Washington',
       href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: '@perrinmyerson',
+      href: 'https://www.instagram.com/perrinmyerson/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'perrinmyerson',
+      href: 'https://github.com/perrinmyerson',
     },
   ],
 };
@@ -361,9 +360,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/perrinmyerson'},
   {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/perrinm/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/perrinmyerson/'},
+  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/perrinmyerson'},
 ];
